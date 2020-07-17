@@ -8,6 +8,8 @@ var result = feetToMile(47000);
 result = result.toFixed(2);
 // console.log("Total Mile is:", result);
 
+
+
 // Problem-02: Wood Calculator
 function woodCalculator(chair, table, cot) {
     var woodForChair = chair * 1;
@@ -19,6 +21,8 @@ function woodCalculator(chair, table, cot) {
 
 var totalWoodResult = woodCalculator(14, 5, 12);
 // console.log("We need", totalWoodResult,"cubic feet wood.");
+
+
 
 // Problem-03: Brick Calculator for Construction
 function brickCalculator(numberOfFloor) {
@@ -40,6 +44,8 @@ function brickCalculator(numberOfFloor) {
 }
 var totalBreakCount = brickCalculator(23);
 // console.log("We need", totalBreakCount, "bricks to build the whole thing.");
+
+
 
 // Problem-04: Smallest name identifier
 function tinyFriend(names) {
