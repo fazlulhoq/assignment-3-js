@@ -29,7 +29,7 @@ function brickCalculator(numberOfFloor) {
     var firstTenFloor = 10;
     var secondTenFloor = 10;
     if (numberOfFloor > 20) {
-        numberOfBricks = (firstTenFloor * 15 * 1000) + (secondTenFloor * 12 * 1000) + ((numberOfFloor - 20) * 10 * 1000);
+        numberOfBricks = ((numberOfFloor - 20) * 10 * 1000) + (firstTenFloor * 15 * 1000) + (secondTenFloor * 12 * 1000);
     }
     else if (numberOfFloor > 10) {
         numberOfBricks = (firstTenFloor * 15 * 1000) + ((numberOfFloor - 10) * 12 * 1000);
@@ -38,11 +38,11 @@ function brickCalculator(numberOfFloor) {
         numberOfBricks = (numberOfFloor * 15 * 1000);
     }
     else {
-        console.log("Number of floor is > 0");
+        console.log("The number of floor is > 0");
     }
     return numberOfBricks;
 }
-var totalBreakCount = brickCalculator(23);
+var totalBreakCount = brickCalculator(26);
 // console.log("We need", totalBreakCount, "bricks to build the whole thing.");
 
 
